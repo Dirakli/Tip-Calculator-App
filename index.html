@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <img
+        class="logo"
+        src="./images/logo.svg"
+        alt="logo image named splitter"
+      />
+      <div class="main-box">
+        <div class="white-box">
+          <div class="warning-box" id="container" >
+          <span class="bill">Bill</span>
+        </div>
+          <div class="input-icon">
+            <input id="inputValue" type="text" placeholder="0" />
+            <img
+              class="dollar"
+              src="./images/icon-dollar.svg"
+              alt="dollar sign"
+            />
+          </div>
+
+          <span class="selection-tips">Select Tip %</span>
+          <div class="percent-boxes">
+            <div class="box-one" id="one">5%</div>
+            <div class="box-two" id="two" >10%</div>
+            <div class="box-three" id="three">15%</div>
+            <div class="box-four" id="four" >25%</div>
+            <div class="box-five" id="five" >50%</div>
+            <input id="custom-input" class="box-custom" placeholder="custom"></input>
+          </div>
+
+          <div class="box-for-js-two" id="second-container" >
+          <span class="people-number">Number of People</span>
+        </div>
+          <div class="input-icon-second">
+            <input id="peopleValue" type="text" placeholder="0" />
+            <img
+              class="person"
+              src="./images/icon-person.svg"
+              alt="person icon "
+            />
+          </div>
+        </div>
+        <div class="green-box">
+          <div class="tip-amount-wrapper">
+            <div class="tip-amount">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <span id="tips">$0.00</span>
+          </div>
+          <div class="total-wrapper">
+            <div class="total">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <span id="total">$0.00</span>
+          </div>
+          <button class="reset-button" id="rst">RESET</button>
+        </div>
+      </div>
+    </section>
+    <script src="functionality.js" ></script>
+  </body>
+</html>
